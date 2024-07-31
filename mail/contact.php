@@ -17,4 +17,8 @@ $header .= "Reply-To: $email";
 
 if(!mail($to, $subject, $body, $header))
   http_response_code(500);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 42d932f (Initial commit)
 ?>

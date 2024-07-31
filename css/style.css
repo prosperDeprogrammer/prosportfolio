@@ -9693,3 +9693,30 @@ h4, h5, h6 {
   padding: 0;
   list-style-type: none;
 }
+<<<<<<< HEAD
+=======
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#78cc6d;
+  border-radius:5px 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #78cc6d;
+}
+>>>>>>> 42d932f (Initial commit)
