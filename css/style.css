@@ -5,7 +5,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -9693,8 +9693,6 @@ h4, h5, h6 {
   padding: 0;
   list-style-type: none;
 }
-<<<<<<< HEAD
-=======
 
 
 
@@ -9719,4 +9717,3 @@ h4, h5, h6 {
 ::-webkit-scrollbar-thumb:hover {
   background: #78cc6d;
 }
->>>>>>> 42d932f (Initial commit)
