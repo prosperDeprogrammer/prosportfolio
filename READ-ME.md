@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Prosper Ortese
 
-I'm a passionate software developer focused on building scalable web and mobile applications. I specialize in PHP, Laravel, React Native, JavaScript, and Node.js.
+I'm a passionate software developer focused on building scalable web and mobile applications. I specialize in PHP, Laravel, React Native, JavaScript, Python and Node.js.
 
 ## 🚀 What I Do
 - 🧠 Full-stack Web Development
