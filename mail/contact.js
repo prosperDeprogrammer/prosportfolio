@@ -1,4 +1,4 @@
-$(function () {
+/*$(function () {
 
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
@@ -68,8 +68,37 @@ $(function () {
 
 $('#name').focus(function () {
     $('#success').html('');
-});
+});*/
 
+
+
+ emailjs.init("your-user-id");  // Replace with your EmailJS user ID
+
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get form data
+            const user_name = document.getElementById('user_name').value;
+            const user_email = document.getElementById('user_email').value;
+            const message = document.getElementById('message').value;
+
+              var name = $("input#name").val();
+            var email = $("input#email").val();
+            var subject = $("input#subject").val();
+            var message = $("textarea#message").val();
+
+            // Send email using EmailJS service
+            emailjs.send("your-service-id", "your-template-id", {
+                user_name: user_name,
+                user_email: user_email,
+                message: message
+            }).then(function(response) {
+                console.log("Email sent successfully:", response);
+            }, function(error) {
+                console.error("Error sending email:", error);
+            });
+        });
 
 
 
