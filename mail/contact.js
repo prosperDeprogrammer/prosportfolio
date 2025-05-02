@@ -95,18 +95,31 @@ $(function () {
                     message: message,
                     email: user_email,
                 }).then(function (response) {
-                    $('#success').html("<div class='alert alert-success'>")
-                        .append("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
-                        .append($("<strong>").text("Email sent successfully."))
-                        .append('</div>');
 
+                    $('#success').html(
+                      "<div class='alert alert-success alert-dismissible fade show' role='alert'>" +
+                        "<strong>Email sent successfully.</strong>" +
+                        "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>" +
+                      "</div>"
+                    );
+
+                 
                     $('#contactForm').trigger("reset");
                     console.log("Email sent successfully:", response);
                 }, function (error) {
-                    $('#success').html("<div class='alert alert-danger'>")
+
+
+                    $('#success').html(
+                      "<div class='alert alert-danger alert-dismissible fade show' role='alert'>" +
+                        "<strong>Sorry, it seems our mail server is not responding. Please try again later!</strong>" +
+                        "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>" +
+                      "</div>"
+                    );
+
+                   /* $('#success').html("<div class='alert alert-danger'>")
                         .append("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
                         .append($("<strong>").text("Sorry, it seems our mail server is not responding. Please try again later!"))
-                        .append('</div>');
+                        .append('</div>');*/
                     console.error("Error sending email:", error);
                 });
             }
