@@ -70,7 +70,9 @@ $('#name').focus(function () {
     $('#success').html('');
 });*/
 
-emailjs.init("gBePY6EGhUiayF21J"); // Your EmailJS user ID
+
+
+
 
 document.getElementById('sendMessageButton').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -79,29 +81,29 @@ document.getElementById('sendMessageButton').addEventListener('submit', function
     const user_email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
     const subject = document.getElementById('subject').value;
+    const currentTime = new Date().toLocaleString();
 
     emailjs.send("service_ma7811m", "template_y2cpyve", {
         title: subject,
         name: user_name,
-        time: new Date().toLocaleString(),
+        time: currentTime,
         message: message,
         email: user_email,
-    }).then(function(response) {
-        $('#success').html("<div class='alert alert-success'>");
-        $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-            .append("</button>");
-        $('#success > .alert-success').append($("<strong>").text("Email sent successfully."));
-        $('#success > .alert-success').append('</div>');
+    }).then((response) => {
+        $('#success').html("<div class='alert alert-success'>")
+            .append("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
+            .append($("<strong>").text("Email sent successfully"))
+            .append('</div>');
         console.log("Email sent successfully:", response);
-    }, function(error) {
-        $('#success').html("<div class='alert alert-danger'>");
-        $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-            .append("</button>");
-        $('#success > .alert-danger').append($("<strong>").text("Sorry " + user_name + ", it seems that our mail server is not responding. Please try again later!"));
-        $('#success > .alert-danger').append('</div>');
+    }, (error) => {
+        $('#success').html("<div class='alert alert-danger'>")
+            .append("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
+            .append($("<strong>").text("Sorry, it seems our mail server is not responding. Please try again later!"))
+            .append('</div>');
         console.error("Error sending email:", error);
     });
 });
+
 
 
 
