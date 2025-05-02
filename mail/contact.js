@@ -83,6 +83,8 @@ document.getElementById('sendMessageButton').addEventListener('submit', function
     const subject = document.getElementById('subject').value;
     const currentTime = new Date().toLocaleString();
 
+    alert(user_name);
+
     emailjs.send("service_ma7811m", "template_y2cpyve", {
         title: subject,
         name: user_name,
