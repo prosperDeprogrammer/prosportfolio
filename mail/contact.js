@@ -95,26 +95,25 @@ $(function () {
                     message: message,
                     email: user_email,
                 }).then(function (response) {
-
-                    $('#success').html(
-                      "<div class='alert alert-success alert-dismissible fade show' role='alert'>" +
-                        "<strong>Email sent successfully.</strong>" +
-                        "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>" +
-                      "</div>"
-                    );
-
-                 
+                     $('#success').html("<div class='alert alert-success'>");
+                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                            .append("</button>");
+                    $('#success > .alert-success')
+                            .append("<strong>Your message has been sent. </strong>");
+                    $('#success > .alert-success')
+                            .append('</div>');
+                    $('#contactForm').trigger("reset");
                     $('#contactForm').trigger("reset");
                     console.log("Email sent successfully:", response);
                 }, function (error) {
 
 
-                    $('#success').html(
-                      "<div class='alert alert-danger alert-dismissible fade show' role='alert'>" +
-                        "<strong>Sorry, it seems our mail server is not responding. Please try again later!</strong>" +
-                        "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>" +
-                      "</div>"
-                    );
+                   $('#success').html("<div class='alert alert-danger'>");
+                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                            .append("</button>");
+                    $('#success > .alert-danger').append($("<strong>").text("Sorry " + name + ", it seems that our mail server is not responding. Please try again later!"));
+                    $('#success > .alert-danger').append('</div>');
+                    $('#contactForm').trigger("reset");
 
                    /* $('#success').html("<div class='alert alert-danger'>")
                         .append("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
