@@ -73,39 +73,50 @@ $('#name').focus(function () {
 
 
 
+$(function () {
+        $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
+            preventSubmit: true,
+            submitError: function ($form, event, errors) {
+                // You can handle form errors here
+            },
+            submitSuccess: function ($form, event) {
+                event.preventDefault();
 
-document.getElementById('sendMessageButton').addEventListener('submit', function(event) {
-    event.preventDefault();
+                const user_name = $("#name").val();
+                const user_email = $("#email").val();
+                const message = $("#message").val();
+                const subject = $("#subject").val();
+                const currentTime = new Date().toLocaleString();
 
-    const user_name = document.getElementById('name').value;
-    const user_email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    const subject = document.getElementById('subject').value;
-    const currentTime = new Date().toLocaleString();
+                emailjs.send("service_ma7811m", "template_y2cpyve", {
+                    title: subject,
+                    name: user_name,
+                    time: currentTime,
+                    message: message,
+                    email: user_email,
+                }).then(function (response) {
+                    $('#success').html("<div class='alert alert-success'>")
+                        .append("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
+                        .append($("<strong>").text("Email sent successfully."))
+                        .append('</div>');
 
-    alert(user_name);
+                    $('#contactForm').trigger("reset");
+                    console.log("Email sent successfully:", response);
+                }, function (error) {
+                    $('#success').html("<div class='alert alert-danger'>")
+                        .append("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
+                        .append($("<strong>").text("Sorry, it seems our mail server is not responding. Please try again later!"))
+                        .append('</div>');
+                    console.error("Error sending email:", error);
+                });
+            }
+        });
 
-    emailjs.send("service_ma7811m", "template_y2cpyve", {
-        title: subject,
-        name: user_name,
-        time: currentTime,
-        message: message,
-        email: user_email,
-    }).then((response) => {
-        $('#success').html("<div class='alert alert-success'>")
-            .append("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
-            .append($("<strong>").text("Email sent successfully"))
-            .append('</div>');
-        console.log("Email sent successfully:", response);
-    }, (error) => {
-        $('#success').html("<div class='alert alert-danger'>")
-            .append("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
-            .append($("<strong>").text("Sorry, it seems our mail server is not responding. Please try again later!"))
-            .append('</div>');
-        console.error("Error sending email:", error);
+        // Clear alerts on focus
+        $('#name').focus(function () {
+            $('#success').html('');
+        });
     });
-});
-
 
 
 
