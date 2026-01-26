@@ -832,6 +832,10 @@ a:hover {
         grid-template-columns: 1fr;
     }
 
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
     .mobile-nav-toggle {
         display: block;
         position: fixed;
@@ -853,63 +857,6 @@ a:hover {
         background: var(--text-accent);
         color: white;
     }
-}
-
-/* About Section Specific Layout */
-.about-info-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.about-info-item {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.03);
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: var(--transition-smooth);
-    backdrop-filter: blur(10px);
-}
-
-.about-info-item:hover {
-    background: rgba(255, 255, 255, 0.06);
-    transform: translateY(-5px);
-    border-color: var(--text-accent);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.about-icon {
-    width: 60px;
-    height: 60px;
-    background: rgba(56, 189, 248, 0.1);
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-accent);
-    font-size: 1.4rem;
-    margin-right: 1.5rem;
-    flex-shrink: 0;
-    transition: var(--transition-smooth);
-}
-
-.about-info-item:hover .about-icon {
-    background: var(--gradient-primary);
-    color: white;
-    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.3);
-}
-
-/* Label removed, adjusting value style */
-.about-value {
-    display: block;
-    color: var(--text-primary);
-    font-weight: 700;
-    font-size: 1.15rem;
-    word-break: break-all;
-    margin-left: 0;
 }
 
 /* Extra Mobile Adjustments */
@@ -948,9 +895,18 @@ a:hover {
         gap: 2rem;
     }
 
+    .contact-info-item {
+        flex-direction: column;
+        /* Stack icon top, text bottom on very small screens */
+        align-items: center;
+        text-align: center;
+    }
+
     .contact-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
     }
 }
