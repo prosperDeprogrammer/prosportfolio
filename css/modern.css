@@ -664,6 +664,16 @@ a:hover {
     gap: 4rem;
 }
 
+/* Prevent grid children from overflowing on small screens */
+.contact-grid>* {
+    min-width: 0;
+    width: 100%;
+}
+
+.contact-form {
+    width: 100%;
+}
+
 .contact-info-item {
     display: flex;
     align-items: flex-start;
@@ -858,5 +868,36 @@ a:hover {
 
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ---- Contact form fixes for small phones ---- */
+    .contact-grid {
+        gap: 2rem;
+    }
+
+    .contact-form {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .form-control-modern {
+        padding: 0.85rem 1rem;
+        font-size: 0.9rem;
+        /* Ensure inputs never exceed viewport */
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-info-item {
+        padding: 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .contact-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+        margin-right: 0.75rem;
+        flex-shrink: 0;
     }
 }
