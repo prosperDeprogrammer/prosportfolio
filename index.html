@@ -81,6 +81,16 @@
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader-wrapper">
+                <div class="loader-circle"></div>
+                <div class="loader-circle-inner"></div>
+            </div>
+            <div class="loader-text">Prosper Ortese</div>
+        </div>
+    </div>
     <!-- Mobile Nav Toggle -->
     <button class="mobile-nav-toggle d-lg-none">
         <i class="fas fa-bars"></i>
@@ -447,6 +457,13 @@
 
     <!-- Custom Scripts -->
     <script>
+        // Preloader
+        $(window).on('load', function () {
+            $('#preloader').delay(250).fadeOut('slow', function () {
+                $(this).remove();
+            });
+        });
+
         // Mobile Navigation Toggle
         $(document).ready(function () {
             $('.mobile-nav-toggle').click(function () {

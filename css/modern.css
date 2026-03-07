@@ -47,6 +47,83 @@
     background: var(--text-accent);
 }
 
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-body);
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.loader-wrapper {
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.loader-circle {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--text-accent);
+    border-bottom-color: #6366F1;
+    animation: spin 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+}
+
+.loader-circle-inner {
+    position: absolute;
+    inset: 12px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-left-color: #EC4899;
+    border-right-color: var(--text-accent);
+    animation: spin 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite reverse;
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.2);
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-text {
+    color: var(--text-primary);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+    0% {
+        opacity: 0.7;
+        text-shadow: 0 0 10px rgba(34, 211, 238, 0.2);
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 20px rgba(34, 211, 238, 0.8), 0 0 30px rgba(99, 102, 241, 0.6);
+        color: var(--text-accent);
+    }
+}
+
 /* Reset & Base */
 *,
 *::before,
