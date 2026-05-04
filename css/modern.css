@@ -328,10 +328,10 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-    min-height: 100vh;
+    min-height: 65vh;
     display: flex;
     align-items: center;
-    padding: 2rem 5rem;
+    padding: 3.5rem 5rem;
     position: relative;
     overflow: hidden;
 }
@@ -455,9 +455,9 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding-top: 3rem;
+    padding-top: 1.5rem;
 }
 
 .stat-item {
@@ -490,12 +490,12 @@ a:hover {
 
 /* Sections */
 .section-padding {
-    padding: 7rem 5rem;
+    padding: 3rem 5rem;
 }
 
 .section-title {
     font-size: 2.5rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.75rem;
     position: relative;
     display: inline-block;
     font-weight: 800;
@@ -518,8 +518,8 @@ a:hover {
 .about-info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2.5rem;
+    gap: 1.25rem;
+    margin-top: 1.75rem;
 }
 
 .about-info-item {
@@ -738,7 +738,7 @@ a:hover {
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 /* Prevent grid children from overflowing on small screens */
@@ -870,7 +870,7 @@ a:hover {
     }
 
     .hero-section {
-        padding: 6rem 1.75rem 3rem;
+        padding: 5rem 1.75rem 2.5rem;
         text-align: center;
         flex-direction: column;
         justify-content: center;
@@ -900,12 +900,12 @@ a:hover {
     }
 
     .section-padding {
-        padding: 4.5rem 1.75rem;
+        padding: 2.5rem 1.75rem;
     }
 
     .section-title {
         font-size: 2rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
     }
 
     /* Services & Portfolio — 1 column on tablet */
@@ -934,7 +934,7 @@ a:hover {
     }
 
     .section-padding {
-        padding: 3.5rem 1.25rem;
+        padding: 2rem 1.25rem;
     }
 
     .btn-primary-modern,
