@@ -753,7 +753,7 @@ a:hover {
 
 .contact-info-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 2rem;
     padding: 1rem;
     border-radius: 12px;
