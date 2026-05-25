@@ -132,35 +132,62 @@
         <main class="content">
             <!-- Hero -->
             <section id="home" class="hero-section reveal">
-                <div>
-                    <p class="hero-subtitle">Hello, I'm</p>
-                    <h1 class="hero-title">Prosper Ortese,<br><span style="color: var(--text-accent);">Full Stack
-                            Engineer</span></h1>
-                    <p class="hero-description">
-                        I design, build, and ship production-grade web and mobile applications from database
-                        architecture to pixel-perfect UI. If it needs to scale, perform, and actually work, that's what
-                        I do.
-                    </p>
-                    <div class="hero-btns">
-                        <a href="#portfolio" class="btn-primary-modern">View My Work</a>
-                        <a href="img/pros-resume.pdf" class="btn-outline-modern" download="pros-resume.pdf">Download
-                            CV</a>
-                    </div>
+                <div class="hero-grid">
+                    <div class="hero-left">
+                        <p class="hero-subtitle">Full Stack Engineer</p>
+                        <h1 class="hero-title">Prosper Ortese,<br><span style="color: var(--text-accent);">Archictecting
+                                Scale.</span></h1>
+                        <p class="hero-description">
+                            I design, build, and ship production-grade web and mobile applications from database
+                            architecture to pixel-perfect UI. If it needs to scale, perform, and actually work, that's
+                            what
+                            I do.
+                        </p>
+                        <div class="hero-btns">
+                            <a href="#portfolio" class="btn-primary-modern">Explore Projects</a>
+                            <a href="img/pros-resume.pdf" class="btn-outline-modern" download="pros-resume.pdf">Download
+                                CV</a>
+                        </div>
 
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <h3>4+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>20+</h3>
-                            <p>Projects Shipped</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>100%</h3>
-                            <p>Code Integrity</p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <h3>4+</h3>
+                                <p>Years Exp</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>20+</h3>
+                                <p>Shipped</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>100%</h3>
+                                <p>Integrity</p>
+                            </div>
                         </div>
                     </div>
+                    <!-- <div class="hero-right d-none d-lg-block">
+                        <div class="terminal-card">
+                            <div class="terminal-header">
+                                <div class="dot dot-red"></div>
+                                <div class="dot dot-yellow"></div>
+                                <div class="dot dot-green"></div>
+                            </div>
+                            <div class="terminal-body" id="terminal-content">
+                                <span class="code-comment">// High-performance system architecture</span><br>
+                                <span class="code-keyword">const</span> <span class="code-func">engineer</span> = {<br>
+                                &nbsp;&nbsp;name: <span class="code-string">"Prosper Ortese"</span>,<br>
+                                &nbsp;&nbsp;role: <span class="code-string">"Full Stack Architect"</span>,<br>
+                                &nbsp;&nbsp;stack: [<span class="code-string">"React/Native"</span>, <span
+                                    class="code-string">"Node.js"</span>, <span
+                                    class="code-string">"SQL/NoSQL"</span>],<br>
+                                &nbsp;&nbsp;focus: <span class="code-string">"Scalability & Performance"</span><br>
+                                };<br><br>
+                                <span class="code-comment">// Building what actually works...</span><br>
+                                <span class="code-func">ship</span>(engineer.<span
+                                    class="code-func">productionGradeApp</span>);<br>
+                                <span class="cursor"></span>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -264,6 +291,31 @@
                 </div>
             </section>
 
+            <!-- Engineering Excellence -->
+            <section class="section-padding reveal">
+                <h2 class="section-title">Engineering Excellence</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fas fa-server"></i>
+                        <h3>System Architecture</h3>
+                        <p>Designing robust distributed systems and microservices that handle complex business logic and
+                            high traffic volumes with ease.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Performance & Scale</h3>
+                        <p>Optimizing everything from database queries to frontend assets. I build applications that
+                            remain fast as users and data grow.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Security First</h3>
+                        <p>Implementing battle-tested security patterns, from telecom-grade identity verification to
+                            enterprise-level data encryption.</p>
+                    </div>
+                </div>
+            </section>
+
             <!-- Services -->
             <section id="services" class="section-padding reveal">
                 <h2 class="section-title">What I Do</h2>
@@ -301,28 +353,29 @@
                         <div class="portfolio-content">
                             <span class="portfolio-tag">E-Learning Marketplace</span>
                             <h3 class="portfolio-title">Coursearly</h3>
+                            <div class="tech-stack-row">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">Cloudinary</span>
+                            </div>
                             <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">
                                 E-learning marketplace for selling courses and eBooks with integrated affiliate
                                 tracking.</p>
                             <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.5rem;"><strong
-                                    style="color: var(--text-primary);">Problem:</strong> Lack of a unified platform for
-                                educators to sell content and manage affiliate revenue.</p>
-                            <ul
-                                style="color: var(--text-secondary); font-size: 0.85rem; padding-left: 1.2rem; margin-bottom: 0.5rem;">
-                                <li>Multi-role system (Instructors, Learners, Affiliates)</li>
-                                <li>Digital content publishing & media uploads</li>
-                                <li>Payment processing & revenue dashboards</li>
-                                <li>Affiliate marketing & commission engine</li>
-                            </ul>
+                                    style="color: var(--text-primary);">Problem:</strong> Educators lacked a unified
+                                sales platform with automated commission tracking.</p>
                             <p style="color: var(--text-accent); font-size: 0.85rem; margin-bottom: 1rem;">
-                                <strong>Role:</strong> Full Stack (Architecture, API, UI, Database)
+                                <strong>Impact:</strong> Scaled to support multi-role authentication and high-volume
+                                digital asset delivery.
                             </p>
                             <a href="https://coursearly.com/" class="portfolio-link" target="_blank">View Project <i
                                     class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
 
-                    <!-- Project 2: EduMESS -->
+
+
                     <div class="portfolio-card">
                         <div class="portfolio-img-wrapper">
                             <img src="img/portfolio-edumess.png" alt="EduMESS" class="portfolio-img">
@@ -330,26 +383,43 @@
                         <div class="portfolio-content">
                             <span class="portfolio-tag">School Management System</span>
                             <h3 class="portfolio-title">EduMESS</h3>
+                            <div class="tech-stack-row">
+                                <span class="tech-badge">PHP / Laravel</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">Multi-tenant</span>
+                            </div>
                             <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">
                                 Enterprise school management platform for K-12 and tertiary institutions.</p>
                             <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.5rem;"><strong
-                                    style="color: var(--text-primary);">Problem:</strong> Inefficient manual processes
-                                for admissions, grading, and school administration.</p>
-                            <ul
-                                style="color: var(--text-secondary); font-size: 0.85rem; padding-left: 1.2rem; margin-bottom: 0.5rem;">
-                                <li>Multi-tenant school architecture</li>
-                                <li>Automated result computation & report cards</li>
-                                <li>Role-based access (Admins, Teachers, Parents)</li>
-                                <li>Fee management & attendance tracking</li>
-                            </ul>
-                            <p style="color: var(--text-accent); font-size: 0.85rem; margin-bottom: 1rem;">
-                                <strong>Role:</strong> Full Stack (System Architecture, Backend, Database)
-                            </p>
+                                    style="color: var(--text-primary);">Impact:</strong> Automated grading and results
+                                computation for thousands of students across multiple campuses.</p>
                             <a href="https://edumess.com/" class="portfolio-link" target="_blank">View Project <i
                                     class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
 
+                    <div class="portfolio-card">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/sim-verify.png" alt="SimVerify Pro" class="portfolio-img">
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">Africa Ignite Hackathon by GSMA</span>
+                            <h3 class="portfolio-title">SimVerify Pro</h3>
+                            <div class="tech-stack-row">
+                                <span class="tech-badge">Next.js</span>
+                                <span class="tech-badge">Nokia NAC API</span>
+                                <span class="tech-badge">GSMA Standards</span>
+                            </div>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">
+                                Telecom-powered identity verification platform preventing SIM-swap fraud at the network
+                                level.</p>
+                            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.5rem;"><strong
+                                    style="color: var(--text-primary);">Solution:</strong> Leveraged CAMARA APIs to
+                                perform real-time risk assessment without user friction.</p>
+                            <a href="https://prosperortese-042a-sim-verify.vercel.app/" class="portfolio-link"
+                                target="_blank">View Demo <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                     <!-- Project 3: 4nzpots -->
                     <div class="portfolio-card">
                         <div class="portfolio-img-wrapper">
@@ -358,21 +428,16 @@
                         <div class="portfolio-content">
                             <span class="portfolio-tag">Location Discovery Platform</span>
                             <h3 class="portfolio-title">4nzpots</h3>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">Location
-                                discovery app for finding curated leisure spots and hidden gems.</p>
+                            <div class="tech-stack-row">
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">REST API</span>
+                            </div>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">
+                                Geolocation discovery app for finding curated leisure spots and hidden gems.</p>
                             <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.5rem;"><strong
-                                    style="color: var(--text-primary);">Problem:</strong> Difficulty discovering quality
-                                local spots based on proximity and real-time preferences.</p>
-                            <ul
-                                style="color: var(--text-secondary); font-size: 0.85rem; padding-left: 1.2rem; margin-bottom: 0.5rem;">
-                                <li>Geolocation-based spot discovery</li>
-                                <li>Curated listings with ratings & reviews</li>
-                                <li>RESTful search & filtering API</li>
-                                <li>High-performance location lookups</li>
-                            </ul>
-                            <p style="color: var(--text-accent); font-size: 0.85rem; margin-bottom: 1rem;">
-                                <strong>Role:</strong> Backend (API, Database, Geolocation Architecture)
-                            </p>
+                                    style="color: var(--text-primary);">Impact:</strong> Architected high-performance
+                                geolocation lookups and filtering engines for real-time results.</p>
                             <a href="https://4nzpots.com/" class="portfolio-link" target="_blank">View Project <i
                                     class="fas fa-arrow-right"></i></a>
                         </div>
@@ -389,21 +454,16 @@
                         <div class="portfolio-content">
                             <span class="portfolio-tag">Food Ordering & Delivery</span>
                             <h3 class="portfolio-title">Bitez</h3>
+                            <div class="tech-stack-row">
+                                <span class="tech-badge">React Native</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">Payment Gateway</span>
+                            </div>
                             <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">Food
                                 ordering platform connecting users with local vendors and cafés.</p>
                             <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.5rem;"><strong
-                                    style="color: var(--text-primary);">Problem:</strong> Local vendors lacked a branded
-                                digital presence for order management.</p>
-                            <ul
-                                style="color: var(--text-secondary); font-size: 0.85rem; padding-left: 1.2rem; margin-bottom: 0.5rem;">
-                                <li>Multi-vendor store profiles</li>
-                                <li>Real-time menu & order processing</li>
-                                <li>Integrated cart & delivery calculation</li>
-                                <li>Vendor analytics dashboard</li>
-                            </ul>
-                            <p style="color: var(--text-accent); font-size: 0.85rem; margin-bottom: 1rem;">
-                                <strong>Role:</strong> Full Stack (Platform Architecture, Payment Integration)
-                            </p>
+                                    style="color: var(--text-primary);">Impact:</strong> Enabled digital transformation
+                                for local vendors with real-time order management and analytics.</p>
                             <a href="https://bitez.store/" class="portfolio-link" target="_blank">View Project <i
                                     class="fas fa-arrow-right"></i></a>
                         </div>
@@ -419,20 +479,16 @@
                         <div class="portfolio-content">
                             <span class="portfolio-tag">Community & Skills Platform</span>
                             <h3 class="portfolio-title">Transformation Embassy</h3>
+                            <div class="tech-stack-row">
+                                <span class="tech-badge">React Native</span>
+                                <span class="tech-badge">Firebase</span>
+                                <span class="tech-badge">Push Notifications</span>
+                            </div>
                             <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">Community
                                 mobile app combining faith content with skill acquisition programs.</p>
                             <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.5rem;"><strong
-                                    style="color: var(--text-primary);">Problem:</strong> No central digital hub for
-                                member engagement and learning resources.</p>
-                            <ul
-                                style="color: var(--text-secondary); font-size: 0.85rem; padding-left: 1.2rem; margin-bottom: 0.5rem;">
-                                <li>Structured skill acquisition modules</li>
-                                <li>Content management (Sermons & Resources)</li>
-                                <li>Push notifications & member engagement</li>
-                            </ul>
-                            <p style="color: var(--text-accent); font-size: 0.85rem; margin-bottom: 1rem;">
-                                <strong>Role:</strong> Full Stack (Mobile App, Backend API, Deployment)
-                            </p>
+                                    style="color: var(--text-primary);">Impact:</strong> Reached thousands of users with
+                                structured learning modules and real-time community engagement.</p>
                             <a href="https://play.google.com/store/apps/details?id=com.transformationembassyapp.apk"
                                 class="portfolio-link" target="_blank">View App <i class="fas fa-arrow-right"></i></a>
                         </div>
@@ -446,9 +502,16 @@
                         <div class="portfolio-content">
                             <span class="portfolio-tag">Marketing Automation</span>
                             <h3 class="portfolio-title">Sendova</h3>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem;">An enterprise bulk messaging and
-                                campaign management platform with funnel building, instant messaging, and developer API
-                                access.</p>
+                            <div class="tech-stack-row">
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">Redis</span>
+                                <span class="tech-badge">Bulk Messaging</span>
+                            </div>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">Enterprise bulk messaging and
+                                campaign management platform with developer API access.</p>
+                            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.5rem;"><strong
+                                    style="color: var(--text-primary);">Impact:</strong> Built a scalable engine for
+                                instant communication and high-throughput marketing funnels.</p>
                             <a href="https://sendova.co/" class="portfolio-link" target="_blank">View Project <i
                                     class="fas fa-arrow-right"></i></a>
                         </div>
@@ -543,6 +606,7 @@
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
