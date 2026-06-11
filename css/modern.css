@@ -5,8 +5,8 @@
     /* Color Palette - Modern Premium Dark (Slate & Indigo) */
     --bg-body: #0B1121;
     --bg-sidebar: #020617;
-    --bg-card: rgba(30, 41, 59, 0.7);
-    --bg-card-hover: rgba(51, 65, 85, 0.8);
+    --bg-card: rgba(15, 23, 42, 0.4);
+    --bg-card-hover: rgba(30, 41, 59, 0.6);
 
     --text-primary: #FFFFFF;
     --text-secondary: #C1CFE0;
@@ -155,7 +155,7 @@ h6 {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 a {
@@ -210,17 +210,17 @@ a:hover {
 
 .profile-section {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .profile-img {
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top center;
     border: 3px solid rgba(255, 255, 255, 0.05);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     transition: var(--transition-smooth);
 }
 
@@ -255,7 +255,7 @@ a:hover {
 .nav-link {
     display: flex;
     align-items: center;
-    padding: 0.85rem 1rem;
+    padding: 0.65rem 0.85rem;
     color: var(--text-secondary);
     border-radius: 12px;
     font-weight: 500;
@@ -328,10 +328,10 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-    min-height: 65vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
-    padding: 3.5rem 5rem;
+    padding: 2rem 4rem;
     position: relative;
     overflow: hidden;
 }
@@ -364,20 +364,20 @@ a:hover {
 .hero-subtitle {
     font-size: 0.85rem;
     color: var(--text-accent);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
     display: inline-block;
-    padding: 0.45rem 1rem;
+    padding: 0.35rem 0.85rem;
     background: rgba(56, 189, 248, 0.1);
     border-radius: 50px;
     border: 1px solid rgba(56, 189, 248, 0.2);
 }
 
 .hero-title {
-    font-size: 3.75rem;
-    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
     line-height: 1.1;
     font-weight: 800;
     letter-spacing: -2px;
@@ -388,7 +388,7 @@ a:hover {
 .hero-description {
     font-size: 1.1rem;
     max-width: 580px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     color: var(--text-secondary);
     font-weight: 400;
     line-height: 1.75;
@@ -454,10 +454,10 @@ a:hover {
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding-top: 1.5rem;
+    padding-top: 1rem;
 }
 
 .stat-item {
@@ -490,12 +490,12 @@ a:hover {
 
 /* Sections */
 .section-padding {
-    padding: 3rem 5rem;
+    padding: 1.5rem 4rem;
 }
 
 .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 1.75rem;
+    font-size: 2.2rem;
+    margin-bottom: 1.25rem;
     position: relative;
     display: inline-block;
     font-weight: 800;
@@ -570,16 +570,16 @@ a:hover {
 /* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 1rem;
 }
 
 .skill-card {
     background-color: var(--bg-card);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 2rem 1.5rem;
-    border-radius: 16px;
+    padding: 1.25rem 0.75rem;
+    border-radius: 14px;
     text-align: center;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: flex;
@@ -600,9 +600,9 @@ a:hover {
 }
 
 .skill-card:hover {
-    transform: translateY(-8px) scale(1.02);
+    transform: translateY(-5px) scale(1.02);
     border-color: rgba(56, 189, 248, 0.3);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .skill-card:hover::before {
@@ -610,8 +610,8 @@ a:hover {
 }
 
 .skill-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
     color: var(--text-accent);
     transition: 0.4s;
 }
@@ -624,7 +624,7 @@ a:hover {
 
 .skill-card h4 {
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     margin: 0;
     z-index: 1;
 }
@@ -633,7 +633,7 @@ a:hover {
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 /* Services (What I Do) cards */
@@ -651,9 +651,9 @@ a:hover {
 }
 
 .portfolio-card:hover {
-    transform: translateY(-12px);
+    transform: translateY(-8px);
     border-color: var(--text-accent);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(56, 189, 248, 0.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(56, 189, 248, 0.1);
 }
 
 .portfolio-img-wrapper {
@@ -687,7 +687,7 @@ a:hover {
 }
 
 .portfolio-content {
-    padding: 1.75rem;
+    padding: 1.5rem;
 }
 
 .portfolio-tag {
@@ -734,11 +734,55 @@ a:hover {
     color: var(--text-accent);
 }
 
+/* Project Impact Box */
+.project-impact-box {
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    backdrop-filter: blur(5px);
+}
+
+.project-impact-box p {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+.project-impact-box p strong {
+    color: var(--text-primary);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-impact-box i {
+    color: var(--text-accent);
+    font-size: 0.9rem;
+}
+
+.project-impact-box p:last-child strong {
+    color: #4ade80;
+    /* Success Green for Impact */
+}
+
+.project-impact-box p:last-child i {
+    color: #4ade80;
+}
+
 /* Contact */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 /* Prevent grid children from overflowing on small screens */
@@ -754,8 +798,8 @@ a:hover {
 .contact-info-item {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
-    padding: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.4rem 0.5rem;
     border-radius: 12px;
     transition: 0.3s;
 }
@@ -765,17 +809,17 @@ a:hover {
 }
 
 .contact-icon {
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px;
     background-color: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--text-accent);
-    font-size: 1.2rem;
-    margin-right: 1rem;
+    font-size: 0.9rem;
+    margin-right: 0.75rem;
     flex-shrink: 0;
     transition: 0.3s;
 }
@@ -787,7 +831,7 @@ a:hover {
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* Hero Layout Enhancements */
