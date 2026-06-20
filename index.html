@@ -63,15 +63,24 @@
     <!-- Favicon -->
     <link href="img/pros2.jpeg" rel="icon">
 
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- Icon Fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
 
     <!-- New Modern CSS -->
     <link href="css/modern.css" rel="stylesheet">
 
     <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        defer></script>
+    <script type="text/javascript" defer>
         (function () {
             emailjs.init({
                 publicKey: "gBePY6EGhUiayF21J",
@@ -134,7 +143,7 @@
             <section id="home" class="hero-section reveal">
                 <div class="hero-grid">
                     <div class="hero-left">
-                        <p class="hero-subtitle">High-Impact Full Stack Engineer</p>
+                        <p class="hero-subtitle">Full Stack Engineer</p>
                         <h1 class="hero-title">Prosper Ortese,<br><span style="color: var(--text-accent);">Building
                                 Solutions That Scale Businesses.</span></h1>
                         <p class="hero-description">
@@ -336,7 +345,7 @@
                     <!-- Project 1: Coursearly -->
                     <div class="portfolio-card">
                         <div class="portfolio-img-wrapper">
-                            <img src="img/coursearly.png" alt="Coursearly" class="portfolio-img">
+                            <img src="img/coursearly.png" alt="Coursearly" class="portfolio-img" loading="lazy">
                         </div>
                         <div class="portfolio-content">
                             <span class="portfolio-tag">E-Learning Marketplace</span>
@@ -369,7 +378,7 @@
 
                     <div class="portfolio-card">
                         <div class="portfolio-img-wrapper">
-                            <img src="img/portfolio-edumess.png" alt="EduMESS" class="portfolio-img">
+                            <img src="img/portfolio-edumess.png" alt="EduMESS" class="portfolio-img" loading="lazy">
                         </div>
                         <div class="portfolio-content">
                             <span class="portfolio-tag">School Management System</span>
@@ -398,7 +407,7 @@
 
                     <div class="portfolio-card">
                         <div class="portfolio-img-wrapper">
-                            <img src="img/sim-verify.png" alt="SimVerify Pro" class="portfolio-img">
+                            <img src="img/sim-verify.png" alt="SimVerify Pro" class="portfolio-img" loading="lazy">
                         </div>
                         <div class="portfolio-content">
                             <span class="portfolio-tag">Africa Ignite Hackathon by GSMA</span>
@@ -428,7 +437,7 @@
                     <!-- Project 3: 4nzpots -->
                     <div class="portfolio-card">
                         <div class="portfolio-img-wrapper">
-                            <img src="img/portfolio-4nz.png" alt="4nzpots" class="portfolio-img">
+                            <img src="img/portfolio-4nz.png" alt="4nzpots" class="portfolio-img" loading="lazy">
                         </div>
                         <div class="portfolio-content">
                             <span class="portfolio-tag">Location Discovery Platform</span>
@@ -461,7 +470,7 @@
                     <!-- Project 5: Bitez -->
                     <div class="portfolio-card">
                         <div class="portfolio-img-wrapper">
-                            <img src="img/bitez.png" alt="Bitez" class="portfolio-img">
+                            <img src="img/bitez.png" alt="Bitez" class="portfolio-img" loading="lazy">
                         </div>
                         <div class="portfolio-content">
                             <span class="portfolio-tag">Food Ordering & Delivery</span>
@@ -493,7 +502,8 @@
 
                     <div class="portfolio-card">
                         <div class="portfolio-img-wrapper">
-                            <img src="img/transformation.png" alt="Transformation Embassy" class="portfolio-img">
+                            <img src="img/transformation.png" alt="Transformation Embassy" class="portfolio-img"
+                                loading="lazy">
                         </div>
                         <div class="portfolio-content">
                             <span class="portfolio-tag">Faith & Skill Empowerment</span>
@@ -529,7 +539,7 @@
 
                     <div class="portfolio-card">
                         <div class="portfolio-img-wrapper">
-                            <img src="img/sendweb.png" alt="Sendova" class="portfolio-img">
+                            <img src="img/sendweb.png" alt="Sendova" class="portfolio-img" loading="lazy">
                         </div>
                         <div class="portfolio-content">
                             <span class="portfolio-tag">Marketing Automation</span>
@@ -646,9 +656,9 @@
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="mail/jqBootstrapValidation.min.js" defer></script>
+    <script src="mail/contact.js" defer></script>
 
     <!-- Custom Scripts -->
     <script>

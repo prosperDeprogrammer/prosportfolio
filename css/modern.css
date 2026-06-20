@@ -1,19 +1,21 @@
 /* Modern Professional Portfolio - Dark Theme */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap'); */
 
 :root {
     /* Color Palette - Modern Premium Dark (Slate & Indigo) */
-    --bg-body: #0B1121;
+    --bg-body: #0F172A;
     --bg-sidebar: #020617;
-    --bg-card: rgba(15, 23, 42, 0.4);
-    --bg-card-hover: rgba(30, 41, 59, 0.6);
+    --bg-card: rgba(30, 41, 59, 0.4);
+    --bg-card-hover: rgba(51, 65, 85, 0.6);
 
-    --text-primary: #FFFFFF;
-    --text-secondary: #C1CFE0;
-    --text-accent: #22D3EE;
+    --text-primary: #E2E8F0;
+    --text-secondary: #94A3B8;
+    --text-accent: #38BDF8;
     --text-glow: rgba(56, 189, 248, 0.5);
 
-    --border-color: rgba(255, 255, 255, 0.1);
+    --border-color: rgba(226, 232, 240, 0.08);
 
     --gradient-primary: linear-gradient(135deg, #0EA5E9 0%, #6366F1 50%, #EC4899 100%);
     --gradient-glow: radial-gradient(circle at center, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
@@ -24,7 +26,7 @@
     --transition-smooth: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 
     --glass-bg: rgba(15, 23, 42, 0.6);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.05);
     --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     --backdrop-blur: blur(12px);
 }
@@ -104,7 +106,7 @@
 
 .loader-text {
     color: var(--text-primary);
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -137,7 +139,7 @@ body {
         radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.08) 0%, transparent 50%),
         radial-gradient(circle at 85% 30%, rgba(99, 102, 241, 0.08) 0%, transparent 50%);
     color: var(--text-secondary);
-    font-family: 'Figtree', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
     line-height: 1.7;
     overflow-x: hidden;
@@ -152,8 +154,8 @@ h4,
 h5,
 h6 {
     color: var(--text-primary);
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
     line-height: 1.2;
     margin-bottom: 0.75rem;
 }
