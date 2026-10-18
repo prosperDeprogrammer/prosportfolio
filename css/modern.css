@@ -239,8 +239,8 @@ a:hover {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 800;
-    letter-spacing: -0.5px;
+    font-weight: 600;
+    letter-spacing: -0.25px;
 }
 
 .nav-menu {
@@ -378,11 +378,11 @@ a:hover {
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 2.75rem;
     margin-bottom: 1rem;
-    line-height: 1.1;
-    font-weight: 800;
-    letter-spacing: -2px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.5px;
     position: relative;
     z-index: 1;
 }
@@ -479,7 +479,7 @@ a:hover {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .stat-item p {
@@ -496,12 +496,12 @@ a:hover {
 }
 
 .section-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 1.25rem;
     position: relative;
     display: inline-block;
-    font-weight: 800;
-    letter-spacing: -1px;
+    font-weight: 600;
+    letter-spacing: -0.25px;
 }
 
 .section-title::after {
@@ -1161,8 +1161,8 @@ a:hover {
     }
 
     .hero-title {
-        font-size: 2.5rem;
-        letter-spacing: -1px;
+        font-size: 2.25rem;
+        letter-spacing: -0.25px;
     }
 
     .hero-description {
@@ -1180,7 +1180,7 @@ a:hover {
     }
 
     .stat-item h3 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .section-padding {
@@ -1188,7 +1188,7 @@ a:hover {
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
         margin-bottom: 1.5rem;
     }
 
@@ -1205,7 +1205,7 @@ a:hover {
 
 @media (max-width: 576px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .stats-grid {
@@ -1214,7 +1214,7 @@ a:hover {
     }
 
     .stat-item h3 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .section-padding {
